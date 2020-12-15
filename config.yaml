@@ -18,6 +18,8 @@ config:
   # How accurate should the timestamp be in seconds
   livenessRate: 86400
   # Url to the RPC/WS endpoint
-  providerUrl: "https://mainnet.infura.io/v3/84842078b09946638c03157f83405213"
+  providerUrl: "https://eth.framework.xyz"
   # JsonRpcProvider / WebSocketProvider
   providerType: "JsonRpcProvider"
+  # Etherscan API Key
+  etherscanKey: "ZPFXKR715RF26Z3HYBIS5FZRWBERPVDHYT"
