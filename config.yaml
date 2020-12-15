@@ -18,7 +18,7 @@ config:
   # How accurate should the timestamp be in seconds
   livenessRate: 86400
   # Url to the RPC/WS endpoint
-  providerUrl: "https://eth.framework.xyz"
+  providerUrl: "https://eth-mainnet.alchemyapi.io/v2/_WOWR046h-XR_LYCIDupCSzlXsZrCt3i"
   # JsonRpcProvider / WebSocketProvider
   providerType: "JsonRpcProvider"
   # Etherscan API Key
