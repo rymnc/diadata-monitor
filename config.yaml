@@ -3,6 +3,12 @@ config:
     - name: "diaOracle"
       address: "0xD47FDf51D61c100C447E2D4747c7126F19fa23Ef"
       pathToArtifact: "artifacts/diaOracle.json"
+      eventEmitted: "newCoinInfo"
+      timestampVariable: "lastUpdateTimestamp"
+      
     - name: "diaCoinGeckoOracle"
       address: "0x07E4120dD7411a49e091a20FA0be33a183C35d60"
       pathToArtifact: "artifacts/diaCoinGeckoOracle.json"
+      eventEmitted: "OracleUpdate"
+      timestampVariable: "timestamp"
+
