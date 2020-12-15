@@ -27,6 +27,7 @@
   "dependencies": {
     "axios": "^0.21.0",
     "ethers": "^5.0.24",
+    "nodemailer": "^6.4.17",
     "yaml": "^1.10.0"
   }
 }
