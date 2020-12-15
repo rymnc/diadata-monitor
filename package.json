@@ -4,6 +4,7 @@
   "description": "Monitors DiaData's Oracle Contracts",
   "main": "lib/index.js",
   "scripts": {
+    "start": "node lib/index.js",
     "test": "mocha tests/*.js",
     "lint": "prettier --write ."
   },

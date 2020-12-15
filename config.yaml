@@ -14,7 +14,7 @@ config:
       timestampVariable: "timestamp"
 
   # Poll rate in seconds
-  pollRate: 3600
+  pollRate: 10
   # How accurate should the timestamp be in seconds
   livenessRate: 86400
   # Url to the RPC/WS endpoint
