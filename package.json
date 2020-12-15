@@ -1,0 +1,30 @@
+{
+  "name": "diadata-monitor",
+  "version": "1.0.0",
+  "description": "Monitors DiaData's Oracle Contracts",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "mocha tests/*.js",
+    "lint": "prettier --write ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rymnc/diadata-monitor.git"
+  },
+  "author": "Aaryamann Challani <aaryamannchallani7@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rymnc/diadata-monitor/issues"
+  },
+  "homepage": "https://github.com/rymnc/diadata-monitor#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^8.2.1",
+    "mock-ethers-provider": "^1.0.2",
+    "sinon": "^9.2.2"
+  },
+  "dependencies": {
+    "ethers": "^5.0.24",
+    "yaml": "^1.10.0"
+  }
+}
