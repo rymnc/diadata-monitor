@@ -1,8 +1,8 @@
 const { expect } = require("chai");
 const getContracts = require("../lib/helpers/contracts");
 const yaml = require("yaml");
-const fs = require('fs')
-const {config} = yaml.parse(fs.readFileSync("./config.yaml", "utf8"));
+const fs = require("fs");
+const { config } = yaml.parse(fs.readFileSync("./config.yaml", "utf8"));
 
 describe("[ContractFetcher]", () => {
   it("Should fetch the contracts", () => {
