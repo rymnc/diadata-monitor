@@ -1,15 +1,16 @@
 const { expect } = require("chai");
+const ethers = require("ethers");
 const getContracts = require("../lib/helpers/contracts");
-const yaml = require("yaml");
-const fs = require("fs");
-const { config } = yaml.parse(fs.readFileSync("./config.yaml", "utf8"));
+const getConfig = require("../lib/helpers/getConfig");
 
+const {
+  config: { contracts, providerUrl, providerType },
+} = getConfig();
 describe("[ContractFetcher]", () => {
   it("Should fetch the contracts", () => {
-    const answer = getContracts(
-      "https://mainnet.infura.io/v3/84842078b09946638c03157f83405213"
-    );
-    config.contracts.forEach((contract) => {
+    const provider = new ethers.providers[providerType](providerUrl);
+    const answer = getContracts(provider);
+    contracts.forEach((contract) => {
       expect(answer.get(contract.name)).to.not.eql(undefined);
     });
   });
