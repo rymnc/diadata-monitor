@@ -4,7 +4,7 @@
 
 ## Usage
 
-`docker build -t diadata-monitor:latest -f Dockerfile .`
+`docker build -t diadata-monitor:latest -f Dockerfile .` <br>
 `docker run -e "emailPassword=xxxxxxxxxxx" diadata-monitor:latest`
 
 ---
@@ -13,7 +13,7 @@
 
 ---
 
-### to add new contracts
+### To add new contracts
 
 1. Add the abi in the artifacts directory (json)
 2. Append the list in the config.yaml -> contracts subheader
@@ -22,7 +22,7 @@
 
 ---
 
-### to add new transports
+### To add new transports
 
 1. Create the class of the transport you'd want to use.
 2. Define 2 functions, success and error in that class - that handles the publish of error messages of the following format:
