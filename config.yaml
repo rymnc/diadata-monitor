@@ -23,3 +23,14 @@ config:
   providerType: "JsonRpcProvider"
   # Etherscan API Key
   etherscanKey: "ZPFXKR715RF26Z3HYBIS5FZRWBERPVDHYT"
+  # List of notifiers
+  notifiers:
+    - name: "email"
+      emailId: "oracle.monitor@diadata.org"
+      password: "password goes here"
+      host: "gmail"
+      to:
+        - "samuel.suh@diadata.org"
+        - "samuel.brack@diadata.org"
+      class: "EmailClient"
+    # You can add Slack, Discord, etc.
