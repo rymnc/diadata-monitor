@@ -15,7 +15,7 @@ config:
 
   # Poll rate in seconds
   pollRate: 10
-  # How accurate should the timestamp be in seconds
+  # How far back to check if event has been emitted
   livenessRate: 86400
   # Url to the RPC/WS endpoint
   providerUrl: "https://eth-mainnet.alchemyapi.io/v2/_WOWR046h-XR_LYCIDupCSzlXsZrCt3i"
@@ -33,4 +33,5 @@ config:
         - "samuel.suh@diadata.org"
         - "samuel.brack@diadata.org"
       class: "EmailClient"
+      successRate: 86400
     # You can add Slack, Discord, etc.
