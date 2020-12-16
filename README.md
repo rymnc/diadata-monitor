@@ -5,7 +5,7 @@
 ## Usage
 
 `docker build -t diadata-monitor:latest -f Dockerfile .` <br>
-`docker run -e "emailPassword=xxxxxxxxxxx" diadata-monitor:latest`
+`docker run -e 'emailPassword=xxxxxxxxxxx' diadata-monitor:latest`
 
 ---
 
