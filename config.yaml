@@ -30,8 +30,7 @@ config:
       password: "password goes here"
       host: "gmail"
       to:
-        - "samuel.suh@diadata.org"
-        - "samuel.brack@diadata.org"
+        - "jihaceh124@95ta.com"
       class: "EmailClient"
       successRate: 86400
     # You can add Slack, Discord, etc.
